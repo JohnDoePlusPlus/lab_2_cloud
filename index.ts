@@ -5,7 +5,7 @@ import * as os from 'os';
 
 const server = http.createServer((request, response) => {
   response.writeHead(200);
-  response.end(`Hello world! From ${os.platform()}!`);
+  response.end(`Hello world! From ${os.platform()}!\n`);
 });
 
 server.listen(8000, '0.0.0.0');
